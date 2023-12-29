@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Coding By watermelonhero -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wololodle | watermelonhero</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="data/civ-list_test.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="game-modal">
+    <div class="game-modal-content">
+      <img src="images/lost.gif" alt="gif">
+      <h4>Game Over!</h4>
+      <p>The correct civ was: <b>Armenians</b></p>
+      <button class="play-again">Play Again</button>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Wololodle</h2>
+    <div class="instructions">
+      <p>Guess the <b>civilization</b> in 6 tries.</p>
+      <p>Each guess must be a valid AoE2 <b>civilization</b>.</p>
+      <p>Each incorrect guess will reveal anothere clue.</p>
+      <p>Try to guess the <b>civilization</b> in the least number of tries.</p>
+    </div>
+    <div class="content">
+      <div class="clues">
+        <div class="clue1">
+          <ul>
+            <li class="clue1a"> <span></span></li>
+            <li class="clue1b"> <span></span></li>
+            <li class="clue1c"> <span></span></li>
+          </ul>
+        </div>
+        <div class="clue2">
+          <ul>
+            <li class="clue2a"> <span></span></li>
+            <li class="clue2b"> <span></span></li>
+          </ul>
+        </div>
+        <div class="clue3">
+          <ul>
+            <li class="clue3a"> <span></span></li>
+            <li class="clue3b"> <span></span></li>
+          </ul>
+        </div>
+        <div class="clue4">
+          <ul>
+            <li class="clue4a"> <span></span></li>
+          </ul>
+        </div>
+        <div class="clue5">
+          <ul>
+            <li class="clue5a"> <span></span></li>
+          </ul>
+        </div>
+      </div>
+      <input type="text" spellcheck="false" placeholder="Enter a civilization">
+      <div class="buttons">
+        <button class="guess">Guess</button>
+        <h4 class="guesses-text">
+          Incorrect guesses:
+          <b>0 / 5</b>
+        </h4>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

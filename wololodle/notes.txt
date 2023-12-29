@@ -1,0 +1,46 @@
+wololodle.com
+
+website with javascript web game tutorials:
+https://www.codingnepalweb.com/best-javascript-games-for-beginners/
+
+Github for aoe2techtree has most of the images and icons to use.
+
+clue1 = 3 missing techs from the tech tree
+clue2 = 2 missing units from the tech tree
+clue3 = 1 description of civ bonus & 1 unique tech
+clue4 = 1 civ team bonus
+clue5 = 1 unique unit
+
+
+
+{
+            "civilization": "Bengalis",
+            "aoe2url": "https://aoe2techtree.net/#Bengalis",
+            "clues":[
+                {
+                    "clue1":[
+
+                    ],
+                    "clue2":[
+
+                    ],
+                    "clue3": [
+                        {
+                            "civbonus": [
+
+                            ],
+                            "civuniquetech": [
+
+                            ]
+                        }
+                    ],
+                    "clue4":[
+
+                    ],
+                    "clue5":[
+                        
+                    ]
+                    
+                }
+            ]
+        }
