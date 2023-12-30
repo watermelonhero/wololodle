@@ -114,8 +114,12 @@ const gameOver = (isVictory) => {
 }
 
 const handleGuess = () => {
+    // Removes autocomplete list
+    removeElements();
+
+    // Makes input into lowercase and store in guess
     const guess = guessInput.value.toLowerCase();
-    guessInput.value = "";
+    guessInput.value = ""; // clears the input
 
     if (guess === currentCiv) {
         return gameOver(true);
