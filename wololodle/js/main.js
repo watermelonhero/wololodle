@@ -5,13 +5,16 @@ const clueElements = [
     document.querySelector('.clue3'),
     document.querySelector('.clue4'),
     document.querySelector('.clue5')
-  ];
+];
 const guessesText = document.querySelector(".guesses-text b");
 const gameModal = document.querySelector(".game-modal");
 const playAgainBtn = document.querySelector(".play-again");
 const guessInput = document.querySelector("input");
 const guessButton = document.querySelector(".guess");
 const sharedData = {};
+
+// Access civList data and extract all the civ names
+const civNames = civList.map(obj => obj.civilization);
 
 let currentCiv, wrongGuessCount;
 const maxGuesses = 5;
@@ -130,9 +133,49 @@ const resetCluesOpacity = () => {
         document.querySelector('.clue3'),
         document.querySelector('.clue4'),
         document.querySelector('.clue5')
-      ];
+    ];
     clueElements.forEach((element, index) => {
         element.style.opacity = index < 1 ? 1 : 0; // Keep clue1 clues visible, hide others
+    });
+}
+
+// Reference for autocomplete suggestions on input
+let input = document.getElementById("input");
+
+// Execute function on keyup in the input field
+input.addEventListener("keyup", (e) => {
+    // Initially remove all elements (so if user erases a letter of adds a new letter then clean previous outputs)
+    removeElements();
+    // Loop through civName array
+    for (let i of civNames) {
+        // Convert input to lowercase and compare with each string
+        if (i.toLowerCase().startsWith(input.value.toLowerCase()) && input.value != "") {
+            // Create li element
+            let autoCompItem = document.createElement("li");
+            // One common class name
+            autoCompItem.classList.add("ac-matched");
+            autoCompItem.style.cusor = "pointer";
+            autoCompItem.setAttribute("onclick", "displayMatched('" + i + "')");
+            // Display matched item in bold
+            let matched = "<b>" + i.substr(0, input.value.length) + "</b>";
+            matched += i.substr(input.value.length);
+            // Display matched in array
+            autoCompItem.innerHTML = matched;
+            document.querySelector(".ac-list").appendChild(autoCompItem);
+        }
+    }
+});
+
+function displayMatched(value) {
+    input.value = value;
+    removeElements();
+}
+
+function removeElements() {
+    // Clear all matched
+    let matchedRemove = document.querySelectorAll(".ac-matched");
+    matchedRemove.forEach((matRem) => {
+        matRem.remove();
     });
 }
 

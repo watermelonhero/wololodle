@@ -60,7 +60,12 @@
           </ul>
         </div>
       </div>
-      <input type="text" spellcheck="false" placeholder="Enter a civilization">
+      <form autocomplete="off">
+        <div>
+          <input type="text" id="input" spellcheck="false" placeholder="Enter a civilization">
+        </div>
+        <ul class="ac-list"></ul>
+      </form>
       <div class="buttons">
         <button class="guess">Guess</button>
         <h4 class="guesses-text">
