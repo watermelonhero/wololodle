@@ -1,5 +1,4 @@
-{
-  civList: [
+const civList = [
     {
       civilization: "Armenians",
       aoe2url: "https://aoe2techtree.net/#Armenians",
@@ -996,5 +995,4 @@
         }
       ]
     }
-  ]
-}
+]
