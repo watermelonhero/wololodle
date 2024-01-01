@@ -1,8 +1,12 @@
 import { Paper, Typography } from "@mui/material";
 import * as React from "react";
 
+/**
+ * Header Component:
+ * Header used to display the application's title
+ * @returns {JSX.Element} Header to display the title of the application
+ */
 export const Header = () => {
-
     return (
         <>
             <Paper 
