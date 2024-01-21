@@ -25,18 +25,6 @@ body{
   font-weight: 500;
   padding: 16px 25px;
 }
-.container .instructions{
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ccc;
-}
-.instructions p{
-  font-size: 14px;
-  font-weight: 400;
-  padding: 4px 25px;
-}
-.instructions p b{
-  font-weight: 600;
-}
 .container .content{
   margin: 25px 20px 35px;
 }
