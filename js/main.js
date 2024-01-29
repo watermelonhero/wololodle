@@ -204,6 +204,14 @@ function removeElements() {
 guessButton.addEventListener("click", handleGuess);
 playAgainBtn.addEventListener("click", getRandomCiv);
 
+// Event listener for pressing the enter key
+document.getElementById("input").addEventListener("keydown", 
+function(enterNegate) {
+    if (enterNegate.key === "Enter") {
+      enterNegate.preventDefault();
+    }
+  });
+
 // Event listeners for how to play button
 openInstructionModalButton.forEach(button => {
     button.addEventListener('click', () => {
