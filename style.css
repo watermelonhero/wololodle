@@ -240,11 +240,11 @@ li.ac-matched:hover {
   padding: 30px;
 }
 .game-modal img {
-  max-width: 130px;
+  max-width: 100px;
   margin-bottom: 20px;
 }
 .game-modal h4 {
-  font-size: 1.53rem;
+  font-size: 1.5rem;
 }
 .game-modal p {
   font-size: 1.15rem;
