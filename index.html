@@ -20,44 +20,12 @@
       <button class="play-again">Play Again</button>
     </div>
   </div>
-  <div class="instructions-modal">
-    <div class="instructions-modal-content">
-      <header class="instructions-modal-content-header">
-        <h2>How to play</h2>
-        <button type="button">✖️</button>
-      </header>
-      <div>Guess the
-        <span class="font-bold">civilization</span>
-        in 5 guesses.
-      </div>
-      <div>
-        Each day you'll be given a set of clues.
-      </div>
-      <div>
-        Each guess must be a valid AoE2
-        <span class="font-bold">civilization.</span>
-      </div>
-      <div>
-        After each guess, your guess will be checked against the set of clues.
-      </div>
-      <div>
-        Each incorrect guess will reveal the next set of clues.
-      </div>
-      <div>
-        Try to guess the 
-        <span class="font-bold">civilization</span>
-         in the least number of guesses!
-      </div>
-      <div>
-        A new
-        <span class="font-bold">civilization</span>
-        will be available every day!
-      </div>
-    </div>
-
-  </div>
+  <div id="overlay"> </div>
   <div class="container">
-    <h2>Wololodle</h2>
+    <div class="container-header">
+      <div class="gametitle">Wololodle</div>
+      <button class="howtoplay-button">&quest;</button>
+    </div>
     <div class="content">
       <div class="clues">
         <div class="clue1">
@@ -102,6 +70,34 @@
           Incorrect guesses:
           <b>0 / 5</b>
         </h4>
+      </div>
+    </div>
+  </div>
+  <div class="instructions-modal" id="instructions">
+    <div class="instructions-modal-content">
+      <div class="instructions-modal-content-header">
+        <div class="title">How to play</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="instructions-modal-body">
+        <p>Guess the
+          <span class="font-bold">civilization</span>
+          in 5 guesses.
+        </p>
+        <p>Each day you'll be given a set of clues.</p>
+        <p>Each guess must be a valid AoE2
+          <span class="font-bold">civilization.</span>
+        </p>
+        <!-- <p>After each guess, your guess will be checked against the set of clues.</p> -->
+        <p>Each incorrect guess will reveal the next set of clues.</p>
+        <p>Try to guess the
+          <span class="font-bold">civilization</span>
+          in the least number of guesses!
+        </p>
+        <p>A new
+          <span class="font-bold">civilization</span>
+          will be available every day!
+        </p>
       </div>
     </div>
   </div>

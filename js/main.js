@@ -11,6 +11,9 @@ const gameModal = document.querySelector(".game-modal");
 const playAgainBtn = document.querySelector(".play-again");
 const guessInput = document.querySelector("input");
 const guessButton = document.querySelector(".guess");
+const openInstructionModalButton = document.querySelectorAll('.howtoplay-button');
+const closeInstructionModalButton = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 const sharedData = {};
 
 // Access civList data and extract all the civ names
@@ -170,6 +173,18 @@ input.addEventListener("keyup", (e) => {
     }
 });
 
+function openModal(modal) {
+    if (modal == null) return
+    modal.classList.add('active')
+    overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+    if (modal == null) return
+    modal.classList.remove('active')
+    overlay.classList.remove('active')
+}
+
 function displayMatched(value) {
     input.value = value;
     removeElements();
@@ -186,5 +201,27 @@ function removeElements() {
 // Event listeners for guess button and play again button
 guessButton.addEventListener("click", handleGuess);
 playAgainBtn.addEventListener("click", getRandomCiv);
+
+// Event listeners for how to play button
+openInstructionModalButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = document.querySelector('#instructions')
+        openModal(modal)
+    })
+})
+
+closeInstructionModalButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.instructions-modal')
+        closeModal(modal)
+    })
+})
+
+overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.instructions-modal.active')
+    modals.forEach(modal => {
+      closeModal(modal)
+    })
+  })
 
 getRandomCiv(); // Start the game with a random civ
