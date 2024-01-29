@@ -19,7 +19,7 @@ body{
   max-width: 600px;
   width: 100%;
   border-radius: 7px;
-  background: #fff;
+  background: white;
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 .container-header {
@@ -270,6 +270,21 @@ li.ac-matched:hover {
 }
 .game-modal button:hover{
   background: #2c52ed;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 8px;
+}
+
+.footer .author {
+  font-size: 0.8rem;
+}
+.footer p {
+  font-size: 0.5rem;
+  font-style: italic;
 }
 
 @media (max-width: 400px) {
