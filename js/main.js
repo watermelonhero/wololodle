@@ -14,6 +14,7 @@ const guessButton = document.querySelector(".guess");
 const openInstructionModalButton = document.querySelectorAll('.howtoplay-button');
 const closeInstructionModalButton = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
+
 const sharedData = {};
 
 // Access civList data and extract all the civ names
@@ -31,6 +32,7 @@ const resetGame = () => {
     resetCluesOpacity(); // Reset clue opacity
     guessInput.value = "";
     currentClueIndex = 1; // Reset to show the first clue
+    guessButton.disabled = true; // Initially disable the button
 }
 
 const getRandomCiv = () => {
@@ -67,6 +69,9 @@ const revealNextClue = () => {
 
             // Reveal the clue by setting its opacity to 1
             clueElements[1].style.opacity = 1;
+
+            // Disable the guessButton again
+            guessButton.disabled = true;
             break;
 
         case 4: // Reveal next clue from clue3
@@ -77,6 +82,9 @@ const revealNextClue = () => {
             // Reveal the clue by setting its opacity to 1
             clueElements[2].style.opacity = 1;
 
+            // Disable the guessButton again
+            guessButton.disabled = true;
+
             break;
 
         case 5: // Reveal clue4
@@ -85,6 +93,10 @@ const revealNextClue = () => {
 
             // Reveal the clue by setting its opacity to 1
             clueElements[3].style.opacity = 1;
+
+            // Disable the guessButton again
+            guessButton.disabled = true;
+
             break;
 
         case 6: // Reveal clue5
@@ -92,6 +104,10 @@ const revealNextClue = () => {
 
             // Reveal the clue by setting its opacity to 1
             clueElements[4].style.opacity = 1;
+
+            // Disable the guessButton again
+            guessButton.disabled = true;
+
             break;
 
         case 7:
@@ -205,12 +221,18 @@ guessButton.addEventListener("click", handleGuess);
 playAgainBtn.addEventListener("click", getRandomCiv);
 
 // Event listener for pressing the enter key
-document.getElementById("input").addEventListener("keydown", 
-function(enterNegate) {
-    if (enterNegate.key === "Enter") {
-      enterNegate.preventDefault();
-    }
-  });
+document.getElementById("input").addEventListener("keydown",
+    function (enterNegate) {
+        if (enterNegate.key === "Enter") {
+            enterNegate.preventDefault();
+        }
+    });
+
+// Event listener to diable the guess button until input is filled in
+input.addEventListener("input", () => {
+    const guessButton = document.querySelector("#guessbutton");
+    guessButton.disabled = input.value.trim() === "";
+});
 
 // Event listeners for how to play button
 openInstructionModalButton.forEach(button => {
@@ -230,8 +252,8 @@ closeInstructionModalButton.forEach(button => {
 overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.instructions-modal.active')
     modals.forEach(modal => {
-      closeModal(modal)
+        closeModal(modal)
     })
-  })
+})
 
 getRandomCiv(); // Start the game with a random civ
