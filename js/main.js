@@ -10,6 +10,7 @@ const guessesText = document.querySelector(".guesses-text b");
 const gameModal = document.querySelector(".game-modal");
 const playAgainBtn = document.querySelector(".play-again");
 const guessInput = document.querySelector(".civSelect");
+console.log(guessInput)
 const guessButton = document.querySelector(".guess");
 const openInstructionModalButton = document.querySelectorAll('.howtoplay-button');
 const closeInstructionModalButton = document.querySelectorAll('[data-close-button]');
@@ -30,7 +31,7 @@ const resetGame = () => {
     guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
     gameModal.classList.remove("show");
     resetCluesOpacity(); // Reset clue opacity
-    guessInput.value = "";
+    guessInput.value = "defaultSelect"; // returns input to default select
     currentClueIndex = 1; // Reset to show the first clue
 }
 
@@ -134,9 +135,7 @@ const handleGuess = () => {
 
     // Makes input into lowercase and store in guess
     const guess = guessInput.value.toLowerCase();
-    console.log("handleGuess:guess value = ")
-    console.log(guess)
-    guessInput.value = ""; // clears the input
+    guessInput.value = "defaultSelect"; // returns input to default select
 
     if (guess === currentCiv) {
         return gameOver(true);
