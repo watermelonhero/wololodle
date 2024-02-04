@@ -10,7 +10,6 @@ const guessesText = document.querySelector(".guesses-text b");
 const gameModal = document.querySelector(".game-modal");
 const playAgainBtn = document.querySelector(".play-again");
 const guessInput = document.querySelector(".civSelect");
-console.log(guessInput)
 const guessButton = document.querySelector(".guess");
 const openInstructionModalButton = document.querySelectorAll('.howtoplay-button');
 const closeInstructionModalButton = document.querySelectorAll('[data-close-button]');
@@ -32,6 +31,7 @@ const resetGame = () => {
     gameModal.classList.remove("show");
     resetCluesOpacity(); // Reset clue opacity
     guessInput.value = "defaultSelect"; // returns input to default select
+    disableGuessButton();
     currentClueIndex = 1; // Reset to show the first clue
 }
 
@@ -73,6 +73,7 @@ const revealNextClue = () => {
             clueElements[1].style.opacity = 1;
 
             // Disable the guessButton again
+            disableGuessButton();
             break;
 
         case 4: // Reveal next clue from clue3
@@ -84,6 +85,7 @@ const revealNextClue = () => {
             clueElements[2].style.opacity = 1;
 
             // Disable the guessButton again
+            disableGuessButton();
             break;
 
         case 5: // Reveal clue4
@@ -94,6 +96,7 @@ const revealNextClue = () => {
             clueElements[3].style.opacity = 1;
 
             // Disable the guessButton again
+            disableGuessButton();
             break;
 
         case 6: // Reveal clue5
@@ -103,6 +106,7 @@ const revealNextClue = () => {
             clueElements[4].style.opacity = 1;
 
             // Disable the guessButton again
+            disableGuessButton();
             break;
 
         case 7:
@@ -179,7 +183,24 @@ function removeElements() {
     });
 }
 
-// Event listeners for guess button and play again button
+function disableGuessButton() {
+    guessButton.disabled = true; // Disable the button
+    guessButton.style.backgroundColor = "gray"; // Change color of button to grey
+}
+
+function checkGuessInput() {
+    if (guessInput.value !== "defaultSelect") {
+      guessButton.disabled = false; // Enable the button
+      guessButton.removeAttribute("style");
+    } else {
+        disableGuessButton();
+    }
+  }
+  
+checkGuessInput();
+guessInput.addEventListener("input", checkGuessInput);
+
+// Event listeners for guess button and play again button when clicked
 guessButton.addEventListener("click", handleGuess);
 playAgainBtn.addEventListener("click", getRandomCiv);
 
