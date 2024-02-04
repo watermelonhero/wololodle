@@ -256,5 +256,178 @@ const civList = [
             ]
           }
         ]
+      },
+      {
+        civilization: "Bohemians",
+        aoe2url: "https://aoe2techtree.net/#Bohemians",
+        clues: [
+          {
+            clue1: [
+              "No Thumb Ring",
+              "No Parthian Tactics",
+              "No Gambesons",
+              "No Bloodlines",
+              "No Plate Barding Armor",
+              "No Dry Dock",
+              "No Shipwright",
+              "No Heated Shot",
+              "No Hoardings",
+              "No Crop Rotation"
+            ],
+            clue2: [
+              "No Cavalry Archer",
+              "No Elephant Archer",
+              "No Eagle Scout",
+              "No Hussar",
+              "No Paladin",
+              "No Steppe Lancer",
+              "No Camel Rider",
+              "No Heavy Camel Rider",
+              "No Battle Elephant",
+              "No Armored Elephant",
+              "No Siege Ram",
+              "No Siege Onager",
+              "No Fast Fire Ship",
+              "No Heavy Demolition Ship",
+              "No Dromon"
+            ],
+            clue3: [
+              {
+                civbonus: [
+                  "Blacksmith and Universities cost less wood",
+                  "Chemistry and Hand Cannoneer available in Castle Age",
+                  "Spearmen deal more bonus damage",
+                  "Fervor and Sanctity affect Villagers",
+                  "Mining Camp technologies free"
+                ],
+                  civuniquetech: [
+                    "Gunpowder units move faster",
+                    "Monastary technologies gold costs replaced by food"
+                  ]
+              }
+            ],
+            clue4: [
+              "Markets work faster"
+            ],
+            clue5: [
+              "Houfnice",
+              "Hussite Wagon"
+            ]
+          }
+        ]
+      },
+      {
+        civilization: "Britons",
+        aoe2url: "https://aoe2techtree.net/#Britons",
+        clues: [
+          {
+            clue1: [
+              "No Thumb Ring",
+              "No Parthian Tactics",
+              "No Bloodlines",
+              "No Bombard Tower",
+              "No Redemption",
+              "No Atonement",
+              "No Heresy",
+              "No Stone Shaft Mining",
+              "No Crop Rotation"
+                    ],
+            clue2: [
+              "No Elephant Archer",
+              "No Eagle Scout",
+              "No Hussar",
+              "No Paladin",
+              "No Steppe Lancer",
+              "No Camel Rider",
+              "No Battle Elephant",
+              "No Siege Ram",
+              "No Armored Elephant",
+              "No Siege Onager",
+              "No Bombard Cannon",
+              "No Elite Cannon Galleon",
+              "No Dromon",
+            ],
+            clue3: [
+              {
+                civbonus: [
+                  "Town Centers cost cheaper",
+                  "Archers have increased range per age",
+                  "Shephards work faster"
+                ],
+                civuniquetech: [
+                  "Increased archer range and tower attack",
+                  "Trebuchets do blast damage"
+                ]
+              }
+            ],
+            clue4: [
+              "Archery Ranges work faster"
+            ],
+            clue5: [
+              "Longbowman"
+            ]
+          }
+        ]
+      },
+      {
+        civilization: "Bulgarians",
+        aoe2url: "https://aoe2techtree.net/#Bulgarians",
+        clues: [
+          {
+            clue1: [
+              "No Ring Archer Armor",
+              "No Dry Dock",
+              "No Shipwright",
+              "No Fortified Wall",
+              "No Bombard Tower",
+              "No Arrowslits",
+              "No Treadmill Crane",
+              "No Hoardings",
+              "No Sappers",
+              "No Atonement",
+              "No Block Printing",
+              "No Faith",
+              "No Sanctity",
+              "No Two-Man Saw",
+              "No Guilds"
+            ],
+            clue2: [
+              "No Crossbowman",
+              "No Elephant Archer",
+              "No Champion",
+              "No Eagle Scout",
+              "No Paladin",
+              "No Steppe Lancer",
+              "No Camel Rider",
+              "No Battle Elephant",
+              "No Armored Elephant",
+              "No Bombard Cannon",
+              "No Fast Fire Ship",
+              "No Elite Cannon Galleon",
+              "No Heavy Demolition Ship",
+              "No Dromon"
+            ],
+            clue3: [
+              {
+                civbonus: [
+                  "Milita-line upgrades free",
+                  "Town Center cost fewer stone",
+                  "Blacksmith and Siege Workshop techs cheaper food"
+                ],
+                civuniquetech: [
+                  "Calvary attack faster",
+                  "Militia-line gain additional armor"
+                ]
+              }
+            ],
+            clue4: [
+              "Blacksmith work faster"
+            ],
+            clue5: [
+              "Konnik",
+              "Krepost"
+            ]
+          }
+        ]
       }
     ]
