@@ -39,8 +39,8 @@ const getRandomCiv = () => {
     // Selecting a random civ and the clues from the civList
     const { civilization, aoe2url, clues } = civList[Math.floor(Math.random() * civList.length)];
     currentCiv = civilization.toLowerCase();
-    console.log("Current Civ:")
-    console.log(currentCiv)
+    // console.log("Current Civ:")
+    // console.log(currentCiv)
 
     const { clue1, clue2, clue3, clue4, clue5 } = clues[0];
 
@@ -185,7 +185,7 @@ function removeElements() {
 
 function disableGuessButton() {
     guessButton.disabled = true; // Disable the button
-    guessButton.style.backgroundColor = "gray"; // Change color of button to grey
+    guessButton.style.backgroundColor = "LightGray"; // Change color of button to grey
 }
 
 function checkGuessInput() {
