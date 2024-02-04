@@ -9,7 +9,7 @@ const clueElements = [
 const guessesText = document.querySelector(".guesses-text b");
 const gameModal = document.querySelector(".game-modal");
 const playAgainBtn = document.querySelector(".play-again");
-const guessInput = document.querySelector("input");
+const guessInput = document.querySelector(".civSelect");
 const guessButton = document.querySelector(".guess");
 const openInstructionModalButton = document.querySelectorAll('.howtoplay-button');
 const closeInstructionModalButton = document.querySelectorAll('[data-close-button]');
@@ -32,13 +32,14 @@ const resetGame = () => {
     resetCluesOpacity(); // Reset clue opacity
     guessInput.value = "";
     currentClueIndex = 1; // Reset to show the first clue
-    guessButton.disabled = true; // Initially disable the button
 }
 
 const getRandomCiv = () => {
     // Selecting a random civ and the clues from the civList
     const { civilization, aoe2url, clues } = civList[Math.floor(Math.random() * civList.length)];
     currentCiv = civilization.toLowerCase();
+    console.log("Current Civ:")
+    console.log(currentCiv)
 
     const { clue1, clue2, clue3, clue4, clue5 } = clues[0];
 
@@ -71,7 +72,6 @@ const revealNextClue = () => {
             clueElements[1].style.opacity = 1;
 
             // Disable the guessButton again
-            guessButton.disabled = true;
             break;
 
         case 4: // Reveal next clue from clue3
@@ -83,8 +83,6 @@ const revealNextClue = () => {
             clueElements[2].style.opacity = 1;
 
             // Disable the guessButton again
-            guessButton.disabled = true;
-
             break;
 
         case 5: // Reveal clue4
@@ -95,8 +93,6 @@ const revealNextClue = () => {
             clueElements[3].style.opacity = 1;
 
             // Disable the guessButton again
-            guessButton.disabled = true;
-
             break;
 
         case 6: // Reveal clue5
@@ -106,8 +102,6 @@ const revealNextClue = () => {
             clueElements[4].style.opacity = 1;
 
             // Disable the guessButton again
-            guessButton.disabled = true;
-
             break;
 
         case 7:
@@ -140,6 +134,8 @@ const handleGuess = () => {
 
     // Makes input into lowercase and store in guess
     const guess = guessInput.value.toLowerCase();
+    console.log("handleGuess:guess value = ")
+    console.log(guess)
     guessInput.value = ""; // clears the input
 
     if (guess === currentCiv) {
@@ -164,33 +160,6 @@ const resetCluesOpacity = () => {
     });
 }
 
-// Reference for autocomplete suggestions on input
-let input = document.getElementById("input");
-
-// Execute function on keyup in the input field
-input.addEventListener("keyup", (e) => {
-    // Initially remove all elements (so if user erases a letter of adds a new letter then clean previous outputs)
-    removeElements();
-    // Loop through civName array
-    for (let i of civNames) {
-        // Convert input to lowercase and compare with each string
-        if (i.toLowerCase().startsWith(input.value.toLowerCase()) && input.value != "") {
-            // Create li element
-            let autoCompItem = document.createElement("li");
-            // One common class name
-            autoCompItem.classList.add("ac-matched");
-            autoCompItem.style.cusor = "pointer";
-            autoCompItem.setAttribute("onclick", "displayMatched('" + i + "')");
-            // Display matched item in bold
-            let matched = "<b>" + i.substr(0, input.value.length) + "</b>";
-            matched += i.substr(input.value.length);
-            // Display matched in array
-            autoCompItem.innerHTML = matched;
-            document.querySelector(".ac-list").appendChild(autoCompItem);
-        }
-    }
-});
-
 function openModal(modal) {
     if (modal == null) return
     modal.classList.add('active')
@@ -201,11 +170,6 @@ function closeModal(modal) {
     if (modal == null) return
     modal.classList.remove('active')
     overlay.classList.remove('active')
-}
-
-function displayMatched(value) {
-    input.value = value;
-    removeElements();
 }
 
 function removeElements() {
@@ -220,19 +184,7 @@ function removeElements() {
 guessButton.addEventListener("click", handleGuess);
 playAgainBtn.addEventListener("click", getRandomCiv);
 
-// Event listener for pressing the enter key
-document.getElementById("input").addEventListener("keydown",
-    function (enterNegate) {
-        if (enterNegate.key === "Enter") {
-            enterNegate.preventDefault();
-        }
-    });
-
-// Event listener to diable the guess button until input is filled in
-input.addEventListener("input", () => {
-    const guessButton = document.querySelector("#guessbutton");
-    guessButton.disabled = input.value.trim() === "";
-});
+// Event listener to diable the guess button until dropdown is filled in with non-default value
 
 // Event listeners for how to play button
 openInstructionModalButton.forEach(button => {

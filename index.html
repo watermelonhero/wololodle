@@ -60,12 +60,54 @@
           </ul>
         </div>
       </div>
-      <form autocomplete="off">
-        <div>
-          <input type="text" id="input" spellcheck="false" placeholder="Enter a civilization">
-        </div>
-        <ul class="ac-list"></ul>
-      </form>
+      <select class="civSelect" id="civSelect">
+        <option id="defaultSelect" disabled selected="selected" hidden value="default">Select a Civilization</option>
+        <option value="Armenians">Armenians</option>
+        <option value="Aztecs">Aztecs</option>
+        <option value="Bengalis">Bengalis</option>
+        <option value="Berbers">Berbers</option>
+        <option value="Bohemians">Bohemians</option>
+        <option value="Britons">Britons</option>
+        <option value="Bulgarians">Bulgarians</option>
+        <option value="Burgundians">Burgundians</option>
+        <option value="Burmese">Burmese</option>
+        <option value="Byzantines">Byzantines</option>
+        <option value="Celts">Celts</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Cumans">Cumans</option>
+        <option value="Dravidians">Dravidians</option>
+        <option value="Ethiopians">Ethiopians</option>
+        <option value="Franks">Franks</option>
+        <option value="Georgians">Georgians</option>
+        <option value="Goths">Goths</option>
+        <option value="Gurjaras">Gurjaras</option>
+        <option value="Hindustanis">Hindustanis</option>
+        <option value="Huns">Huns</option>
+        <option value="Incas">Incas</option>
+        <option value="Italians">Italians</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Khmer">Khmer</option>
+        <option value="Koreans">Koreans</option>
+        <option value="Lithuanians">Lithuanians</option>
+        <option value="Magyars">Magyars</option>
+        <option value="Malay">Malay</option>
+        <option value="Malians">Malians</option>
+        <option value="Mayans">Mayans</option>
+        <option value="Mongols">Mongols</option>
+        <option value="Persians">Persians</option>
+        <option value="Poles">Poles</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Romans">Romans</option>
+        <option value="Saracens">Saracens</option>
+        <option value="Sicilians">Sicilians</option>
+        <option value="Slavs">Slavs</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Tatars">Tatars</option>
+        <option value="Teutons">Teutons</option>
+        <option value="Turks">Turks</option>
+        <option value="Vietnamese">Vietnamese</option>
+        <option value="Vikings">Vikings</option>
+      </select>
       <!-- Separate the button into another div so you can limit its size -->
       <div class="buttons">
         <button class="guess" id="guessbutton">Guess</button>
@@ -103,15 +145,6 @@
         </p>
       </div>
     </div>
-  </div>
-  <div class="footer">
-    <div class="author">
-      Made by watermelonhero, 2024
-    </div>
-    <p>Age of Empires II: Definitive Edition © Microsoft Corporation. Wololodle was created under Microsoft's "Game Content
-    Usage Rules" using assets from Age of Empires II: Definitive Edition, and it is not endorsed by or affiliated with
-    Microsoft. For more info, please see <a href="https://www.xbox.com/en-us/developers/rules">Content Usage Rules</a>.
-    </p>
   </div>
 </body>
 

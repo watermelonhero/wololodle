@@ -85,7 +85,8 @@ body{
   padding-top: 16px;
   transition: all 0.5s ease;
 }
-.content input[type="text"]{
+#civSelect {
+  list-style: none;
   width: 100%;
   height: 60px;
   outline: none;
@@ -94,34 +95,10 @@ body{
   border-radius: 5px;
   border: 1px solid #bfbfbf;
 }
-.content input:hover{
+#civSelect:hover {
   border: 2px solid #5372F0;
 }
-.content input:focus{
-  border: 2px solid #2c52ed;
-}
-.content input::placeholder{
-  color: #aaa;
-}
-.content input:focus::placeholder{
-  color: #bfbfbf;
-}
 
-ul.ac-list{
-  list-style: none;
-  width: 100%;
-  margin-top: 10px;
-  background-color: #f8f8f8;
-  border-radius: 5px;
-}
-li.ac-matched{
-  padding: 5px 16px;
-  font-size: 18px;
-}
-li.ac-matched:hover {
-  background-color: #abb8ed;
-  border-radius: 5px;
-}
 .content .buttons{
   display: flex;
   margin-top: 20px;
