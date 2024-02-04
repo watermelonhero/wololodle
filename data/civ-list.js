@@ -24,19 +24,12 @@ const civList = [
           "No Siege Elephant",
           "No Bombard Cannon",
           "No Eagle Scout",
-          "No Eagle Warrior",
-          "No Elite Eagle Warrior",
           "No Paladin",
-          "No Heavy Cavalry Archer",
           "No Elephant Archer",
-          "No Elite Elephant Archer",
           "No Hussar",
           "No Camel Rider",
-          "No Heavy Camel Rider",
           "No Steppe Lancer",
-          "No Elite Steppe Lancer",
           "No Battle Elephant",
-          "No Elite Battle Elephant",
           "No Cannon Galleon",
           "No Fast Fire Ship"
         ],
@@ -89,29 +82,18 @@ const civList = [
         ],
         clue2: [
           "No Handcannoneer",
-          "No Heavy Cavalry Archer",
           "No Cavalry Archer",
           "No Elephant Archer",
-          "No Elite Elephant Archer",
           "No Halberdier",
           "No Scout Cavalry",
-          "No Light Cavalry",
-          "No Hussar",
           "No Knight",
-          "No Cavalier",
-          "No Paladin",
           "No Steppe Lancer",
-          "No Elite Steppe Lancer",
           "No Camel Rider",
-          "No Heavy Camel Rider",
           "No Battle Elephant",
-          "No Elite Battle Elephant",
           "No Armored Elephant",
-          "No Siege Elephant",
           "No Heavy Scorpion",
           "No Bombard Cannon",
           "No Cannon Galleon",
-          "No Elite Cannon Galleon",
           "No Heavy Demolition Ship",
           "No Galleon",
           "No Dromon"
@@ -158,18 +140,13 @@ const civList = [
           "No Cavalry Archer",
           "No Heavy Cavalry Archer",
           "No Eagle Scout",
-          "No Eagle Warrior",
-          "No Elite Eagle Warrior",
           "No Hussar",
           "No Knight",
           "No Cavalier",
           "No Paladin",
           "No Steppe Lancer",
-          "No Elite Steppe Lancer",
           "No Camel Rider",
           "No Heavy Camel Rider",
-          "No Battering Ram",
-          "No Capped Ram",
           "No Siege Ram",
           "No Siege Onager",
           "No Bombard Cannon",
@@ -219,19 +196,14 @@ const civList = [
         clue2: [
           "No Arbalester",
           "No Elephant Archer",
-          "No Elite Elephant Archer",
           "No Halberdier",
           "No Eagle Scout",
           "No Eagle Warrior",
-          "No Elite Eagle Warrior",
           "No Paladin",
           "No Battle Elephant",
-          "No Elite Battle Elephant",
           "No Steppe Lancer",
-          "No Elite Steppe Lancer",
           "No Siege Ram",
           "No Armored Elephant",
-          "No Siege Elephant",
           "No Siege Onager",
           "No Dromon"
         ],
@@ -276,22 +248,15 @@ const civList = [
         ],
         clue2: [
           "No Cavalry Archer",
-          "No Heavy Cavalry Archer",
           "No Elephant Archer",
-          "No Elite Elephant Archer",
           "No Eagle Scout",
-          "No Eagle Warrior",
-          "No Elite Eagle Warrior",
           "No Hussar",
           "No Paladin",
           "No Steppe Lancer",
-          "No Elite Steppe Lancer",
           "No Camel Rider",
           "No Heavy Camel Rider",
           "No Battle Elephant",
-          "No Elite Battle Elephant",
           "No Armored Elephant",
-          "No Siege Elephant",
           "No Siege Ram",
           "No Siege Onager",
           "No Fast Fire Ship",
@@ -300,7 +265,7 @@ const civList = [
         ],
         clue3: [
           {
-            civbonus: [,
+            civbonus: [
               "Blacksmith and Universities cost less wood",
               "Chemistry and Hand Cannoneer available in Castle Age",
               "Spearmen deal more bonus damage",
@@ -328,16 +293,51 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Britons",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Thumb Ring",
+          "No Parthian Tactics",
+          "No Bloodlines",
+          "No Bombard Tower",
+          "No Redemption",
+          "No Atonement",
+          "No Heresy",
+          "No Stone Shaft Mining",
+          "No Crop Rotation"
+                ],
+        clue2: [
+          "No Elephant Archer",
+          "No Eagle Scout",
+          "No Hussar",
+          "No Paladin",
+          "No Steppe Lancer",
+          "No Camel Rider",
+          "No Battle Elephant",
+          "No Siege Ram",
+          "No Armored Elephant",
+          "No Siege Onager",
+          "No Bombard Cannon",
+          "No Elite Cannon Galleon",
+          "No Dromon",
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Town Centers cost cheaper",
+              "Archers have increased range per age",
+              "Shephards work faster"
+            ],
+            civuniquetech: [
+              "Increased archer range and tower attack",
+              "Trebuchets do blast damage"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Archery Ranges work faster"
+        ],
+        clue5: [
+          "Longbowman"
+        ]
       }
     ]
   },
