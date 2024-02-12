@@ -20,16 +20,9 @@ const civList = [
         clue2: [
           "No Siege Ram",
           "No Siege Onager",
-          "No Armored Elephant",
-          "No Siege Elephant",
           "No Bombard Cannon",
-          "No Eagle Scout",
           "No Paladin",
-          "No Elephant Archer",
           "No Hussar",
-          "No Camel Rider",
-          "No Steppe Lancer",
-          "No Battle Elephant",
           "No Cannon Galleon",
           "No Fast Fire Ship"
         ],
@@ -82,21 +75,14 @@ const civList = [
         ],
         clue2: [
           "No Handcannoneer",
-          "No Cavalry Archer",
-          "No Elephant Archer",
+          "No Heavy Cavalry Archer",
           "No Halberdier",
-          "No Scout Cavalry",
-          "No Knight",
-          "No Steppe Lancer",
-          "No Camel Rider",
-          "No Battle Elephant",
-          "No Armored Elephant",
+          "No Hussar",
+          "No Paladin",
           "No Heavy Scorpion",
           "No Bombard Cannon",
           "No Cannon Galleon",
-          "No Heavy Demolition Ship",
-          "No Galleon",
-          "No Dromon"
+          "No Galleon"
         ],
         clue3: [
           {
@@ -139,19 +125,12 @@ const civList = [
           "No Handcannoneer",
           "No Cavalry Archer",
           "No Heavy Cavalry Archer",
-          "No Eagle Scout",
           "No Hussar",
-          "No Knight",
-          "No Cavalier",
           "No Paladin",
-          "No Steppe Lancer",
-          "No Camel Rider",
           "No Heavy Camel Rider",
           "No Siege Ram",
           "No Siege Onager",
-          "No Bombard Cannon",
-          "No Heavy Demolition Ship",
-          "No Dromon"
+          "No Bombard Cannon"
         ],
         clue3: [
           {
@@ -200,12 +179,9 @@ const civList = [
           "No Eagle Scout",
           "No Eagle Warrior",
           "No Paladin",
-          "No Battle Elephant",
-          "No Steppe Lancer",
           "No Siege Ram",
           "No Armored Elephant",
-          "No Siege Onager",
-          "No Dromon"
+          "No Siege Onager"
         ],
         clue3: [
           {
@@ -252,16 +228,12 @@ const civList = [
           "No Eagle Scout",
           "No Hussar",
           "No Paladin",
-          "No Steppe Lancer",
-          "No Camel Rider",
           "No Heavy Camel Rider",
           "No Battle Elephant",
           "No Armored Elephant",
           "No Siege Ram",
           "No Siege Onager",
-          "No Fast Fire Ship",
-          "No Heavy Demolition Ship",
-          "No Dromon"
+          "No Fast Fire Ship"
         ],
         clue3: [
           {
@@ -309,15 +281,13 @@ const civList = [
           "No Eagle Scout",
           "No Hussar",
           "No Paladin",
-          "No Steppe Lancer",
           "No Camel Rider",
           "No Battle Elephant",
           "No Siege Ram",
           "No Armored Elephant",
           "No Siege Onager",
           "No Bombard Cannon",
-          "No Elite Cannon Galleon",
-          "No Dromon",
+          "No Elite Cannon Galleon"
         ],
         clue3: [
           {
@@ -369,15 +339,12 @@ const civList = [
           "No Champion",
           "No Eagle Scout",
           "No Paladin",
-          "No Steppe Lancer",
           "No Camel Rider",
           "No Battle Elephant",
           "No Armored Elephant",
           "No Bombard Cannon",
           "No Fast Fire Ship",
-          "No Elite Cannon Galleon",
-          "No Heavy Demolition Ship",
-          "No Dromon"
+          "No Elite Cannon Galleon"
         ],
         clue3: [
           {
@@ -407,16 +374,47 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Burgundians",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Thumb Ring",
+          "No Parthian Tactics",
+          "No Supplies",
+          "No Gambesons",
+          "No Bloodlines",
+          "No Ring Archer Armor",
+          "No Dry Dock",
+          "No Shipwright",
+          "No Siege Engineers",
+          "No Heated Shot",
+          "No Heresy",
+          "No Theocracy"
+        ],
+        clue2: [
+          "No Arbalester",
+          "No Heavy Calvary Archer",
+          "No Siege Ram",
+          "No Siege Onager",
+          "No Heavy Scorpion"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Economic upgrades are cheaper and available one age Earlier",
+              "Stable technologies are cheaper",
+              "Cavalier upgrade available an age earlier",
+              "Gunpowder units have more attack"
+            ],
+            civuniquetech: [
+              "Farmers slowly generate gold in addition to food",
+              "Upgrades all Villages into Flemish Militia"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Relics generate both gold and food"
+        ],
+        clue5: [
+          "Coustillier"
+        ]
       }
     ]
   },
@@ -425,16 +423,46 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Burmese",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Thumb Ring",
+          "No Leather Archer Armor",
+          "No Ring Archer Armor",
+          "No Shipwright",
+          "No Bombard Tower",
+          "No Arrowslits",
+          "No Hoardings",
+          "No Sappers",
+          "No Heresy",
+          "No Stone Shaft Mining"
+        ],
+        clue2: [
+          "No Arbalester",
+          "No Hand Cannoneer",
+          "No Paladin",
+          "No Siege Ram",
+          "No Siege Onager",
+          "No Fast Fire Ship"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Lumber camp technologies are free",
+              "Infantry gain extra atttack per age",
+              "Battle Elephants have additional armor",
+              "Monastry technologies are cheaper"
+            ],
+            civuniquetech: [
+              "Cavalry get additional attack vs archers",
+              "Battle Elephants get additional armor"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Relics visible on the map at the start of the game"
+        ],
+        clue5: [
+          "Arambai"
+        ]
       }
     ]
   },
