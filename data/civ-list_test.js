@@ -5,7 +5,7 @@ const civList = [
     clues: [
       {
         clue1: [
-          "No Plate Barding Armor",
+          "No Plate barding Armor",
           "No Treadmill Crane",
           "No Architecture",
           "No Siege Engineers",
@@ -20,23 +20,9 @@ const civList = [
         clue2: [
           "No Siege Ram",
           "No Siege Onager",
-          "No Armored Elephant",
-          "No Siege Elephant",
           "No Bombard Cannon",
-          "No Eagle Scout",
-          "No Eagle Warrior",
-          "No Elite Eagle Warrior",
           "No Paladin",
-          "No Heavy Cavalry Archer",
-          "No Elephant Archer",
-          "No Elite Elephant Archer",
           "No Hussar",
-          "No Camel Rider",
-          "No Heavy Camel Rider",
-          "No Steppe Lancer",
-          "No Elite Steppe Lancer",
-          "No Battle Elephant",
-          "No Elite Battle Elephant",
           "No Cannon Galleon",
           "No Fast Fire Ship"
         ],
@@ -90,31 +76,13 @@ const civList = [
         clue2: [
           "No Handcannoneer",
           "No Heavy Cavalry Archer",
-          "No Cavalry Archer",
-          "No Elephant Archer",
-          "No Elite Elephant Archer",
           "No Halberdier",
-          "No Scout Cavalry",
-          "No Light Cavalry",
           "No Hussar",
-          "No Knight",
-          "No Cavalier",
           "No Paladin",
-          "No Steppe Lancer",
-          "No Elite Steppe Lancer",
-          "No Camel Rider",
-          "No Heavy Camel Rider",
-          "No Battle Elephant",
-          "No Elite Battle Elephant",
-          "No Armored Elephant",
-          "No Siege Elephant",
           "No Heavy Scorpion",
           "No Bombard Cannon",
           "No Cannon Galleon",
-          "No Elite Cannon Galleon",
-          "No Heavy Demolition Ship",
-          "No Galleon",
-          "No Dromon"
+          "No Galleon"
         ],
         clue3: [
           {
@@ -157,24 +125,12 @@ const civList = [
           "No Handcannoneer",
           "No Cavalry Archer",
           "No Heavy Cavalry Archer",
-          "No Eagle Scout",
-          "No Eagle Warrior",
-          "No Elite Eagle Warrior",
           "No Hussar",
-          "No Knight",
-          "No Cavalier",
           "No Paladin",
-          "No Steppe Lancer",
-          "No Elite Steppe Lancer",
-          "No Camel Rider",
           "No Heavy Camel Rider",
-          "No Battering Ram",
-          "No Capped Ram",
           "No Siege Ram",
           "No Siege Onager",
-          "No Bombard Cannon",
-          "No Heavy Demolition Ship",
-          "No Dromon"
+          "No Bombard Cannon"
         ],
         clue3: [
           {
@@ -219,21 +175,13 @@ const civList = [
         clue2: [
           "No Arbalester",
           "No Elephant Archer",
-          "No Elite Elephant Archer",
           "No Halberdier",
           "No Eagle Scout",
           "No Eagle Warrior",
-          "No Elite Eagle Warrior",
           "No Paladin",
-          "No Battle Elephant",
-          "No Elite Battle Elephant",
-          "No Steppe Lancer",
-          "No Elite Steppe Lancer",
           "No Siege Ram",
           "No Armored Elephant",
-          "No Siege Elephant",
-          "No Siege Onager",
-          "No Dromon"
+          "No Siege Onager"
         ],
         clue3: [
           {
@@ -280,16 +228,12 @@ const civList = [
           "No Eagle Scout",
           "No Hussar",
           "No Paladin",
-          "No Steppe Lancer",
-          "No Camel Rider",
           "No Heavy Camel Rider",
           "No Battle Elephant",
           "No Armored Elephant",
           "No Siege Ram",
           "No Siege Onager",
-          "No Fast Fire Ship",
-          "No Heavy Demolition Ship",
-          "No Dromon"
+          "No Fast Fire Ship"
         ],
         clue3: [
           {
@@ -337,15 +281,13 @@ const civList = [
           "No Eagle Scout",
           "No Hussar",
           "No Paladin",
-          "No Steppe Lancer",
           "No Camel Rider",
           "No Battle Elephant",
           "No Siege Ram",
           "No Armored Elephant",
           "No Siege Onager",
           "No Bombard Cannon",
-          "No Elite Cannon Galleon",
-          "No Dromon",
+          "No Elite Cannon Galleon"
         ],
         clue3: [
           {
@@ -397,15 +339,12 @@ const civList = [
           "No Champion",
           "No Eagle Scout",
           "No Paladin",
-          "No Steppe Lancer",
           "No Camel Rider",
           "No Battle Elephant",
           "No Armored Elephant",
           "No Bombard Cannon",
           "No Fast Fire Ship",
-          "No Elite Cannon Galleon",
-          "No Heavy Demolition Ship",
-          "No Dromon"
+          "No Elite Cannon Galleon"
         ],
         clue3: [
           {
