@@ -174,13 +174,9 @@ const civList = [
         ],
         clue2: [
           "No Arbalester",
-          "No Elephant Archer",
           "No Halberdier",
-          "No Eagle Scout",
-          "No Eagle Warrior",
           "No Paladin",
           "No Siege Ram",
-          "No Armored Elephant",
           "No Siege Onager"
         ],
         clue3: [
@@ -224,13 +220,9 @@ const civList = [
         ],
         clue2: [
           "No Cavalry Archer",
-          "No Elephant Archer",
-          "No Eagle Scout",
           "No Hussar",
           "No Paladin",
           "No Heavy Camel Rider",
-          "No Battle Elephant",
-          "No Armored Elephant",
           "No Siege Ram",
           "No Siege Onager",
           "No Fast Fire Ship"
@@ -277,14 +269,9 @@ const civList = [
           "No Crop Rotation"
         ],
         clue2: [
-          "No Elephant Archer",
-          "No Eagle Scout",
           "No Hussar",
           "No Paladin",
-          "No Camel Rider",
-          "No Battle Elephant",
           "No Siege Ram",
-          "No Armored Elephant",
           "No Siege Onager",
           "No Bombard Cannon",
           "No Elite Cannon Galleon"
@@ -335,13 +322,8 @@ const civList = [
         ],
         clue2: [
           "No Crossbowman",
-          "No Elephant Archer",
           "No Champion",
-          "No Eagle Scout",
           "No Paladin",
-          "No Camel Rider",
-          "No Battle Elephant",
-          "No Armored Elephant",
           "No Bombard Cannon",
           "No Fast Fire Ship",
           "No Elite Cannon Galleon"
