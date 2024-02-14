@@ -447,5 +447,102 @@ const civList = [
         ]
       }
     ]
+  },
+  {
+    civilization: "Byzantines",
+    aoe2url: "https://aoe2techtree.net/#Byzantines",
+    clues: [
+      {
+        clue1: [
+          "No Parthian Tactics",
+          "No Bloodlines",
+          "No Blast Furnace",
+          "No Masonry",
+          "No Architecture",
+          "No Siege Engineers",
+          "No Heated Shot",
+          "No Sappers",
+          "No Herbal Medicine"
+        ],
+        clue2: [
+          "No Siege Onager",
+          "No Heavy Scorpion",
+          "No Cannon Galleon"
+        ],
+        clue3: [
+          {
+            civbonus: [
+              "Buildings have more HP per age",
+              "Camel Riders, Skirmishers, Pikemen, Halberdiers cost cheaper",
+              "Fire Ships and Dromons attack faster",
+              "Advance to Imperial Age costs cheaper",
+              "Town Watch, Town Patrol free"
+            ],
+            civuniquetech: [
+              "Fire Ships increased range, Dromon and Bombard Tower blast radius increased",
+              "Unique units cause trample damage"
+            ]
+          }
+        ],
+        clue4: [
+          "Monks heal speed is doubled"
+        ],
+        clue5: [
+          "Cataphract"
+        ]
+      }
+    ]
+  },
+  {
+    civilization: "Celts",
+    aoe2url: "https://aoe2techtree.net/#Celts",
+    clues: [
+      {
+        clue1: [
+          "No Thumb Ring",
+          "No Parthian Tactics",
+          "No Squires",
+          "No Bloodlines",
+          "No Bracer",
+          "No Plate Barding Armor",
+          "No Architecture",
+          "No Bombard Tower",
+          "No Illumination",
+          "No Block Printing",
+          "No Redemption",
+          "No Atonement",
+          "No Theocracy",
+          "No Two-Man Saw",
+          "No Crop Rotation"
+        ],
+        clue2: [
+          "No Arbalester",
+          "No Hand Canoneer",
+          "No Bombard Cannon",
+          "No Fast Fire Ship",
+          "No Elite Cannon Galleon"
+        ],
+        clue3: [
+          {
+            civbonus: [
+              "Infantry move faster",
+              "Lumberjacks work faster",
+              "Siege Weapons fire faster",
+              "Can steal sheep, Celt sheep within line of sight cannot be stolen"
+            ],
+            civuniquetech: [
+              "Castles and towers fire faster; Castles heal allied infantry within a certain distance",
+              "Siege Workshop units get more HP"
+            ]
+          }
+        ],
+        clue4: [
+          "Siege Workshops work faster"
+        ],
+        clue5: [
+          "Woad Raider"
+        ]
+      }
+    ]
   }
 ]
