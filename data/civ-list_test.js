@@ -544,5 +544,161 @@ const civList = [
         ]
       }
     ]
+  },
+  {
+    civilization: "Chinese",
+    aoe2url: "https://aoe2techtree.net/#Chinese",
+    clues: [
+      {
+        clue1: [
+          "No Parthian Tactics",
+          "No Supplies",
+          "No Gambesons",
+          "No Treadmill Crane",
+          "No Siege Engineers",
+          "No Hoardings",
+          "No Redemption",
+          "No Heresy",
+          "No Guilds",
+          "No Crop Rotation"
+        ],
+        clue2: [
+          "No Hand Cannoneer",
+          "No Hussar",
+          "No Paladin",
+          "No Siege Onager",
+          "No Bombard Cannon",
+          "No Fast Fire Ship"
+        ],
+        clue3: [
+          {
+            civbonus: [
+              "Start with extra villagers and fewer resources",
+              "Technologies are cheaper with each age",
+              "Town Centers support extra population and extra LoS",
+              "Demolition ships have more hit points"
+            ],
+            civuniquetech: [
+              "Walls and towers have more HP",
+              "Unique unit and scorpions have more attack"
+            ]
+          }
+        ],
+        clue4: [
+          "Farms have more food"
+        ],
+        clue5: [
+          "Chu Ko Nu"
+        ]
+      }
+    ]
+  },
+  {
+    civilization: "Cumans",
+    aoe2url: "https://aoe2techtree.net/#Cumans",
+    clues: [
+      {
+        clue1: [
+          "No Supplies",
+          "No Gambesons",
+          "No Husbandry",
+          "No Bracer",
+          "No Dry Dock",
+          "No Shipwright",
+          "No Fortified Wall",
+          "No Architecture",
+          "No Gaurd Tower",
+          "No Siege Engineers",
+          "No Arrowslits",
+          "No Treadmill Crane",
+          "No Bombard Tower",
+          "No Illumination",
+          "No Redemption",
+          "No Theocracy",
+          "No Stone Shaft Mining"
+        ],
+        clue2: [
+          "No Arbalester",
+          "No Hand Cannoneer",
+          "No Heavy Scorpion",
+          "No Bombard Cannon",
+          "No Cannon Galleon",
+          "No Heavy Demolition Ship"
+        ],
+        clue3: [
+          {
+            civbonus: [
+              "Additional Town Center can be built in the Feudal Age",
+              "Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram in Castle Age",
+              "Archer Rangers and Stables cost less wood",
+              "Cavalry move faster each age"
+            ],
+            civuniquetech: [
+              "Light Cavalry, Steppe Lancers and Cavalry Archers trained faster",
+              "Team members can create 5 free Elite unique units per Castle"
+            ]
+          }
+        ],
+        clue4: [
+          "Palisade Walls have more HP"
+        ],
+        clue5: [
+          "Kipchak"
+        ]
+      }
+    ]
+  },
+  {
+    civilization: "Dravidians",
+    aoe2url: "https://aoe2techtree.net/#Dravidians",
+    clues: [
+      {
+        clue1: [
+          "No Parthian Tactics",
+          "No Bloodlines",
+          "No Husbandry",
+          "No Plate Barding Armor",
+          "No Treadmill Crane",
+          "No Architecture",
+          "No Siege Engineers",
+          "No Sappers",
+          "No Redemption",
+          "No Heresy",
+          "No Illumination",
+          "No Ferver",
+          "No Gold Shaft Mining",
+          "No Stone Shaft Mining",
+          "No Crop Rotation"
+        ],
+        clue2: [
+          "No Cavalry Archer",
+          "No Hussar",
+          "No Knight",
+          "No Battering Ram"
+        ],
+        clue3: [
+          {
+            civbonus: [
+              "Recieve extra wood when advancing to the next age",
+              "Fisherman and Fishing Ships carry extra food",
+              "Barracks technologies cost less",
+              "Siege weapons cost less wood",
+              "Skirmishers and Elephant Archers attack faster"
+            ],
+            civuniquetech: [
+              "Elephant units regenerate HP",
+              "Infantry and cavalry attacks ignore armor"
+            ]
+          }
+        ],
+        clue4: [
+          "Docks provide extra population room"
+        ],
+        clue5: [
+          "Urumi Sowrdsman",
+          "Thirisadai"
+        ]
+      }
+    ]
   }
 ]
