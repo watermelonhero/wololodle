@@ -706,16 +706,45 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Ethiopians",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Parthian Tactics",
+          "No Gambesons",
+          "No Bloodlines",
+          "No Plate Barding Armor",
+          "No Treadmill Crane",
+          "No Arrowslits",
+          "No Bombard Tower",
+          "No Hoardings",
+          "No Redemption",
+          "No Block Printing",
+          "No Crop Rotation"
+        ],
+        clue2: [
+          "No Hand Cannoneer",
+          "No Champion",
+          "No Paladin",
+          "No Fast Fire Ship",
+          "No Heavy Demolition Ship"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Archers fire faster",
+              "Recieve extra gold and food when advancing t othe next age",
+              "Pikeman upgrade free"
+            ],
+            civuniquetech: [
+              "Unique units and Camel units recieve less damage from mounted units",
+              "Increased blast radius of Siege Workshop units"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Outposts have increased line of sight and cost no stone"
+        ],
+        clue5: [
+          "Shotel Warrior"
+        ]
       }
     ]
   },
@@ -724,16 +753,50 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Franks",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Thumb Ring",
+          "No Parthian Tactics",
+          "No Bloodlines",
+          "No Ring Archer Armor",
+          "No Bracer",
+          "No Shipwright",
+          "No Heated Shot",
+          "No Keep",
+          "No Bombard Tower",
+          "No Treadmill Crane",
+          "No Sappers",
+          "No Redemption",
+          "No Atonement",
+          "No Stone Shaft Mining",
+          "No Two-Man Saw",
+          "No Guilds"
+        ],
+        clue2: [
+          "No Arbalester",
+          "No Hussar",
+          "No Siege Ram",
+          "No Seige Onager"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Castles are cheaper",
+              "Cavalry have extra HP",
+              "Mill technologies free",
+              "Forages work faster"
+            ],
+            civuniquetech: [
+              "Unique units get additional range",
+              "Stables work faster"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Knights get extra line of sight"
+        ],
+        clue5: [
+          "Throwing Axeman"
+        ]
       }
     ]
   },
@@ -742,16 +805,44 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Georgians",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Thumb Ring",
+          "No Ring Archer Armor",
+          "No Dry Dock",
+          "No Shipwright",
+          "No Heated Shot",
+          "No Bombard Tower",
+          "No Atonement",
+          "No Illumination",
+          "No Gold Shaft Mining",
+          "No Two-Man Saw"
+        ],
+        clue2: [
+          "No Arbalester",
+          "No Paladin",
+          "No Bombard Cannon",
+          "No Heavy Demolition Ship"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Start with a Mule Cart, but less food",
+              "Fortied Churches provide Villagers with faster work rate within a range",
+              "Units and buildings recieve even less damage when fighting from higher elevation",
+              "Cavalry regenerates HP increasingly per age"
+            ],
+            civuniquetech: [
+              "Defensive buildings have more attack; towers fire arrows that pierce multiple units",
+              "Cavalry units take less population space"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Buildings cost fewer resources to repair"
+        ],
+        clue5: [
+          "Monaspa"
+        ]
       }
     ]
   },
