@@ -851,16 +851,54 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Goths",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Thumb Ring",
+          "No Parthian Tactics",
+          "No Supplies",
+          "No Gambesons",
+          "No Arson",
+          "No Plate Barding Armor",
+          "No Plate Mail Armor",
+          "No Dry Dock",
+          "No Fortified  Wall",
+          "No Gaurd Tower",
+          "No Siege Engineers",
+          "No Treadmill Crane",
+          "No Bombard Tower",
+          "No Hoardings",
+          "No Redemption",
+          "No Hersey",
+          "No Block Printing",
+          "No Gold Shaft Mining"
+        ],
+        clue2: [
+          "No Arbalester",
+          "No Paladin",
+          "No Siege Ram",
+          "No Siege Onager",
+          "No Cannon Galleon"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Infantry cost cheaper with each age",
+              "Infantry gain increasing attack bonus vs. building per age",
+              "Villagers have additional attack vs. wild boar, hungers carry extra meat, and hung lasts longer",
+              "Loom can be researched instantly",
+              "Extra population in Imperial Age"
+            ],
+            civuniquetech: [
+              "Create unique unit from Barracks",
+              "Barracks work faster"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Barracks work faster"
+        ],
+        clue5: [
+          "Huskarl"
+        ]
       }
     ]
   },
@@ -869,16 +907,53 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Gurjaras",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Parthian Tactics",
+          "No Gambesons",
+          "No Squires",
+          "No Ring Archer Armor",
+          "No Blast Furnace",
+          "No Dry Dock",
+          "No Siege Engineers",
+          "No Arrowslits",
+          "No Bombard Tower",
+          "No Block Printing",
+          "No Faith",
+          "No Two-Man Saw",
+          "No Guilds"
+        ],
+        clue2: [
+          "No Arbalest",
+          "No Cavalry Archer",
+          "No Champion",
+          "No Pikeman",
+          "No Knight",
+          "No Battering Ram",
+          "No Siege Onager",
+          "No Fast Fire Ship"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Start with 2 Forage Bushes",
+              "Can garrison Mills with livestock to produce food",
+              "Mounted units deal bonus damage with each age",
+              "Can garrison Docks with Fishing Ships"
+            ],
+            civuniquetech: [
+              "Military units cost less food",
+              "Camel RFiders and Elephant Archers have additional melee armor"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Camel and elephant units crated 25% faster"
+        ],
+        clue5: [
+          "Chakram Thrower",
+          "Shrivamsha Rider",
+          "Camel Scout"
+        ]
       }
     ]
   },
@@ -887,16 +962,53 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Hindustanis",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Parthian Tactics",
+          "No Gambesons",
+          "No Plate Mail Armor",
+          "No Dry Dock",
+          "No Shipwright",
+          "No Architecture",
+          "No Heated Shot",
+          "No Treadmill Crane",
+          "No Keep",
+          "No Arrowslits",
+          "No Bombard Tower",
+          "No Sappers",
+          "No Heresy",
+          "No Guilds",
+          "No Crop Rotation"
+        ],
+        clue2: [
+          "No Arbalester",
+          "No Halberdier",
+          "No Knight",
+          "No Battering Ram",
+          "No Heavy Scorpion",
+          "No Fast Fire Ship",
+          "No Heavy Demolition Ship"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Villagers cost cheaper each age",
+              "Camel Riders attack faster",
+              "Gunpowder units have additional armor",
+              "Can build Caravanserai in Imperial Age"
+            ],
+            civuniquetech: [
+              "All gold income collected faster; trading fee reduced cost",
+              "Hand Cannoneers have additional range"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Camel and light cavalary units have bonus attack against buildings"
+        ],
+        clue5: [
+          "Ghulam",
+          "Imperial Camel Rider"
+        ]
       }
     ]
   },
@@ -905,16 +1017,58 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Huns",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Supplies",
+          "No Gambesons",
+          "No Ring Archer Armor",
+          "No Plate Mail Armor",
+          "No Shipwright",
+          "No Fortified Wall",
+          "No Gaurd Tower",
+          "No Heated Shot",
+          "No Treadmill Crane",
+          "No Architecture",
+          "No Siege Engineers",
+          "No Arrowslits",
+          "No Bombard Tower",
+          "No Hoardings",
+          "No Redemption",
+          "No Herbal Medicine",
+          "No Block Printing",
+          "No Theocracy",
+          "No Stone Shaft Mining",
+          "No Crop Rotation"
+        ],
+        clue2: [
+          "No Arbalester",
+          "No Hand Cannoneer",
+          "No Champion",
+          "No Onager",
+          "No Heavy Scorpion",
+          "No Bombard Cannon",
+          "No Fast Fire Ship",
+          "No Cannon Galleon"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Do not need houses. but stared with less wood",
+              "On Nomadic maps, the first Town Center spawns a horse scout",
+              "Cavalry Archers cost less with each age",
+              "Trebuchets have increased accuracy"
+            ],
+            civuniquetech: [
+              "Create unique units at stables",
+              "Additional time addeed for Relic, Wonder Victories; enemy relics generate half resources"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Stables work faster"
+        ],
+        clue5: [
+          "Tarkan"
+        ]
       }
     ]
   },
@@ -923,16 +1077,50 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Incas",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Parthian Tactics",
+          "No Supplies",
+          "No Gambesons",
+          "No Bloodlines",
+          "No Husbandry",
+          "No Scale Barding Armor",
+          "No Architecture",
+          "No Bombard Tower",
+          "No Atonement",
+          "No Ferver",
+          "No Two-Man Saw"
+        ],
+        clue2: [
+          "No Cavalry Archer",
+          "No Hand Cannoneer",
+          "No Scout Cavalry",
+          "No Knight",
+          "No Siege Onager",
+          "No Bombard Cannon",
+          "No Cannon Galleon",
+          "No Heavy Demolition Ship"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Military unit food cost decreases with each age",
+              "Villagers affected by Blacksmith upgrades starting in the Castle Age",
+              "Houses support 10 population",
+              "Buildings cost less stone"
+            ],
+            civuniquetech: [
+              "Skirmishers and Slingers no minimum range, Slingers have extra attack",
+              "Unique Units, Slingers, Eagles have additional armor"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Start with a free Llama"
+        ],
+        clue5: [
+          "Kamayuk",
+          "Slinger"
+        ]
       }
     ]
   },
@@ -941,16 +1129,43 @@ const civList = [
     aoe2url: "https://aoe2techtree.net/#Italians",
     clues: [
       {
-        clue1: [],
-        clue2: [],
+        clue1: [
+          "No Parthian Tactics",
+          "No Gambesons",
+          "No Siege Engineers",
+          "No Sappers",
+          "No Heresy",
+          "No Gold Shaft Mining"
+        ],
+        clue2: [
+          "No Halberdier",
+          "No Heavy Cavalry Archer",
+          "No Paladin",
+          "No Siege Ram",
+          "No Heavy Scorpion",
+          "No Heavy Demolition Ship"
+        ],
         clue3: [
           {
-            civbonus: [],
-            civuniquetech: []
+            civbonus: [
+              "Advancing to the next age costs less",
+              "Dock and University technologies cost less",
+              "Fishing Ships cost less",
+              "Gunpowder units cost less"
+            ],
+            civuniquetech: [
+              "Foot archers and unique units have extra armor",
+              "Trade units cost less"
+            ]
           }
         ],
-        clue4: [],
-        clue5: []
+        clue4: [
+          "Unique units avaialble in the Barracks in Imperial Age"
+        ],
+        clue5: [
+          "Genoses Crossbowman",
+          "Condottiero"
+        ]
       }
     ]
   },
